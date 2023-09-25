@@ -1,0 +1,44 @@
+{
+    "France": {
+        "name": "France",
+        "nbHabitant": 67000000,
+        "infecte": false,
+        "nbInfecte": 10,
+        "bienEtre": 100,
+        "coeffBienEtre": 0.1,
+        "coeffInfection": 0.95,
+        "coeffMort": 0.05,
+        "infrastructure": 20,
+        "fond": 20000,
+        "revenu": 4200,
+        "depenses": 3000
+    },
+    "Russie": {
+        "name": "Russie",
+        "nbHabitant": 146170015,
+        "infecte": false,
+        "nbInfecte": 0,
+        "bienEtre": 100,
+        "coeffBienEtre": 1.1,
+        "coeffInfection": 1,
+        "coeffMort": 0.08,
+        "infrastructure": 20,
+        "fond": 800000,
+        "revenu": 4000,
+        "depenses": 4000
+    },
+    "Algérie": {
+        "name": "Algérie",
+        "nbHabitant": 44487616,
+        "infecte": false,
+        "nbInfecte": 5,
+        "bienEtre": 100,
+        "coeffBienEtre": 0.05,
+        "coeffInfection": 0.8,
+        "coeffMort": 0.08,
+        "infrastructure": 15,
+        "fond": 15000,
+        "revenu": 2100,
+        "depenses": 1000
+    }
+}

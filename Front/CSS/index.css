@@ -1,0 +1,72 @@
+main{
+    min-height: calc(100vh - 140px);
+    background-image: url(../img/Fondindex.png);
+    
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    background-color: whitesmoke;
+    padding: 10px 0px;
+    height: 60px;
+}
+
+nav div{
+    display: flex;
+    flex-direction: row;
+}
+
+nav p{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
+    margin: 0px;
+    height: 30px;
+}
+
+nav p img{
+    margin-right: 20px;
+}
+
+.btn{
+    margin-right: 10px;
+}
+
+h1{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+h1 img{
+    width: 50px;
+}
+
+section{
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+aside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img{
+    width: 50%;
+}
+
+footer{
+    height: 50px;
+    margin-left: 30px;
+    background-color: whitesmoke;
+    
+}

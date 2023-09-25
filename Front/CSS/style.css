@@ -1,0 +1,348 @@
+body {
+    background-image: url("../img/illness.jpeg");
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1 {
+    top: 1%;
+    left: 0.5%;
+    color: white;
+}
+
+h2 {
+    color: white;
+    top: auto;
+}
+
+img {
+    width: 45px;
+    height: 45px;
+    border-radius: 190px;
+    position: absolute;
+}
+
+.onglet p {
+    color: aliceblue;
+    border: 1px solid red;
+    height: 50px;
+    width: 100%;
+    padding-top: 4%;
+    padding-left: 3%;
+    display: inline-flex;
+    background-color: #853333;
+    justify-content: space-around;
+    text-align: center;
+}
+
+marquee {
+    background: linear-gradient(0.45turn, #009FFD, #333333);
+    color: white;
+}
+
+footer {
+    color: white;
+}
+
+#chartdiv {
+    /* background-color: black; */
+    margin: auto;
+    margin-top: auto;
+    width: 100%;
+}
+
+#chartdiv:hover {
+    cursor: url(../img/curseur.jpg) pointer;
+}
+
+
+#hud {
+    display: flex;
+    background-color: #01171b;
+}
+
+#time:hover #button_depliant {
+    visibility: visible;
+}
+
+#button_depliant {
+    visibility: hidden;
+    border: 2px solid #000;
+    height: 45px;
+    width: 45px;
+    border-radius: 10% 10% 40% 40%;
+}
+
+.resource {
+    background-color: #da0115;
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    margin: auto;
+    border-radius: 30% 0% 0% 30%;
+}
+
+.resource,
+.resource img {
+    border: 5px #ab2121 ridge;
+}
+
+#time {
+    text-align: center;
+}
+
+.resource img {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.value {
+    background-color: #fff;
+    margin: 1% 1% 5% 35%;
+    width: 65%;
+    height: 90%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.value p {
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+#val_decision {
+    text-transform: capitalize;
+    font-family: Georgia, serif;
+}
+
+.choiceToMake .infobulle_text,
+.resource .infobulle_text,
+.info_onglet .infobulle_text {
+    visibility: hidden;
+    width: auto;
+    height: auto;
+    padding: 0 5px 0 5px;
+    background-color: rgb(166, 194, 217);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    margin-top: 45px;
+}
+
+/* .info_onglet .infobulle_text{
+    width: ;
+} */
+.choiceToMake:hover .infobulle_text,
+.resource:hover .infobulle_text,
+.info_onglet:hover .infobulle_text {
+    visibility: visible;
+    background-color: rgba(39, 70, 116, 0.8);
+    color: rgba(226, 218, 218, 0.8);
+    border: solid rgba(226, 218, 218, 0.8) 1px;
+}
+
+
+#button_depliant,
+#fenetre {
+    display: inline-block;
+    text-align: center;
+}
+
+#fenetre {
+    visibility: hidden;
+    border: 3px solid #000;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    visibility: hidden;
+}
+
+.timer_button {
+    border: 2px solid #000;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.onglet {
+    width: 20%;
+    height: 44.7%;
+    border: solid #04272d;
+    border-width: 0.1em;
+    position: absolute;
+    margin-top: 0.4%;
+    background-color: rgba(2, 26, 30, 0.6);
+    /*#021a1e;*/
+
+
+}
+
+#onglet_inhabitants,
+#onglet_monetaryIncome,
+#onglet_decision {
+    display: block;
+    transform-origin: 0% 50%;
+    transform: scaleX(0);
+    transition: transform 500ms cubic-bezier(.32, 0, .07, 1);
+}
+
+
+
+#conteneur_decision p {
+    width: 90%;
+    height: 100%;
+    max-height: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* overflow: auto; */
+    border-radius: 4px;
+
+}
+
+#onglet_decision {
+    overflow: auto;
+    height: 50vh;
+}
+
+
+#onglet_decision::-webkit-scrollbar {
+    width: 2px;
+}
+
+#fais_ton_choix {
+    position: sticky;
+    top: 0px;
+    height: 30px;
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#onglet_decision div p {
+    width: 90%;
+    height: 45px;
+    max-height: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    border-radius: 4px;
+    padding-top: 0px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* #nb_infecte, #nb_mort, #nb_vaccine, #nb_saint, #stock, #benefices, #depenses, #revenus, #investissement_vaccin{
+
+}  */
+
+#valeur {
+    background-color: #dbdce3;
+    /*background-image: linear-gradient(blue 10%, white 30%, red 60%);*/
+    color: #01171b;
+    width: 40%;
+    height: 70%;
+    text-align: center;
+    border-radius: 10px;
+    border: 1.5px solid #570d0d;
+}
+
+.onglet span {
+    display: flex;
+    height: 100%;
+    border-collapse: collapse;
+    border: 1px solid #fff;
+
+    border-radius: 6px;
+}
+
+#span_global {
+    height: 20px;
+    padding-left: 2px;
+}
+
+/* pour la fin du jeux */
+
+#FinJeux {
+
+    position: absolute;
+    /* text-align: center;*/
+    display: none;
+    background-image: url('../img/loose2.png');
+    width: 500px;
+    height: 500px;
+    z-index: 3;
+
+
+    align-items: center;
+    justify-content: center;
+
+    border: 0.5rem solid;
+    border-radius: 10px;
+
+}
+
+#buttonQuitterJeux {
+
+    position: relative;
+    width: auto;
+    height: auto;
+    border: 0.4rem solid;
+    margin-bottom: 40%;
+    border-radius: 8px;
+}
+
+/* #joyeux{
+     background-color: #000;
+ } */
+#triste {
+    background-color: #fff;
+}
+
+
+/* pour les niveau : */
+
+#choixNiveau{
+
+    position: absolute;
+    display:block;
+    background-image: url('../img/choixNiveau1.png');
+    
+    width: 500px;
+    height: 250px;
+    z-index: 3;
+    
+    text-align: center;
+
+    border: 0.4rem solid;
+    border-radius: 8px;
+    border-color: #dbdce3;
+
+}
+
+#facile{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+    
+}
+#normale{
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+
+}
+
+#difficile{
+    margin-top: 5%;
+  
+
+
+
+}

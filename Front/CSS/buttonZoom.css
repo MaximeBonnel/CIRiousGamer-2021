@@ -1,0 +1,44 @@
+.onglet button {
+    background-color: #853333;
+    width: 90%;
+    height: 45px;
+    border-radius: 12px;
+    margin-top: 2%;
+    margin-left: 7%;
+    border: 2px solid #853333;
+    opacity: 0.8;
+    text-align: center;
+}
+button:disabled{
+    border: 2px solid #000;
+    background-color: grey;
+}
+
+/* .onglet button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+} */
+
+/* button::after {
+    content: '\00bb';
+    position: absolute;
+    margin-right: 10%;
+    margin-top: 3%;
+    opacity: 0;
+    top: 0;
+    right: -100%;
+    transition: 0.3s;
+}
+
+button:hover {
+    padding-right: 25px;
+}
+
+button:hover::after {
+    opacity: 1;
+    right: 0;
+}
+
+} */
